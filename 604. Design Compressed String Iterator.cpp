@@ -21,6 +21,9 @@ ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" 
 //https://leetcode.com/articles/desing-compressed-string-iterator/
 
 //assume valid input strings only, no just 0 as frequencies
+//Approach #3 Demand-Computation
+//Time: O(hasNext + next), O(validNext) <= O(n)
+//space: O(s.size()) with no extra linear space
 class StringIterator {
 	string compressedString;
 	unsigned ptr, num;
@@ -53,7 +56,7 @@ public:
 int main(int argc, char** argv) {
     fast_io
     
-    
+    	
 	StringIterator iterator("g1e2k1s1f1o1r1g1e2k1s1w4a3d1e1x6y1w3L1e2t1C1o1d1e1");
 	while(iterator.hasNext()) cout << iterator.next();
 	cout << endl << '|' << iterator.next() << '|' << endl;
