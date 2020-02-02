@@ -19,6 +19,7 @@ ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" 
 
 
 //https://leetcode.com/articles/desing-compressed-string-iterator/
+//reverse code: https://leetcode.com/submissions/detail/299586058/
 
 //assume valid input strings only, no just 0 as frequencies
 //Approach #3 Demand-Computation
