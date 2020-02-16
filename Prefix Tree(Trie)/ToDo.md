@@ -1,4 +1,4 @@
-[Design problem](https://leetcode.com/problems/prefix-and-suffix-search/)
+ $  https://leetcode.com/problems/prefix-and-suffix-search/
 
 1.	https://leetcode.com/problems/permutations/
 2.	https://leetcode.com/problems/permutations-ii/
