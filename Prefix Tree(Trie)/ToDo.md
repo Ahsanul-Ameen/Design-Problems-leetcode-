@@ -7,5 +7,5 @@
 5.	https://leetcode.com/problems/combinations/
 6.	https://www.geeksforgeeks.org/print-all-palindrome-permutations-of-a-string/
 7.	https://leetcode.com/problems/number-of-squareful-arrays/
-
+   tutor ial [https://swiyu.wordpress.com/]
 
