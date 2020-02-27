@@ -1,11 +1,13 @@
- $  https://leetcode.com/problems/prefix-and-suffix-search/
 
-1.	https://leetcode.com/problems/permutations/
-2.	https://leetcode.com/problems/permutations-ii/
-3.	https://leetcode.com/problems/next-permutation/
-4.	https://leetcode.com/problems/permutation-sequence/
-5.	https://leetcode.com/problems/combinations/
-6.	https://www.geeksforgeeks.org/print-all-palindrome-permutations-of-a-string/
-7.	https://leetcode.com/problems/number-of-squareful-arrays/
+8.	https://leetcode.com/problems/sliding-window-maximum/
+9.	https://leetcode.com/problems/minimum-window-substring/
+10.	https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+11.	https://leetcode.com/problems/paint-house-ii/
+12.	https://leetcode.com/problems/number-of-squareful-arrays/
+  .	https://leetcode.com/problems/number-of-squareful-arrays/
    tutor ial [https://swiyu.wordpress.com/]
+13.	https://leetcode.com/articles/longest-valid-parentheses/
+14.	https://leetcode.com/problems/super-pow/
+15.	https://leetcode.com/problems/prefix-and-suffix-search/
 
+https://leetcode.com/discuss/interview-question/352460/Google-Online-Assessment-Questions
