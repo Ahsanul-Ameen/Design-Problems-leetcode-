@@ -1,4 +1,4 @@
-7.  https://leetcode.com/problems/linked-list-cycle/
+
 8.	https://leetcode.com/problems/sliding-window-maximum/
 9.	https://leetcode.com/problems/minimum-window-substring/
 10.	https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
