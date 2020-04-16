@@ -427,6 +427,70 @@ class Solution {
      
 	return head;
     }
+	
+    
+    // merge two sorted linked list list completety
+    // by rearranging pointers only
+    ListNode* merge(ListNode* a, ListNode* b) {
+        if(!a) return b;
+        if(!b) return a;
+        
+        ListNode* head = nullptr;
+        ListNode* cur = nullptr;
+        
+        while(a && b) {
+            if(a->val <= b->val) {
+                if(!head) cur = head = a;
+                else {
+                    cur->next = a;
+                    cur = cur->next;
+                }
+                a = a->next;
+            }
+            else {
+                if(!head) cur = head = b;
+                else {
+                    cur->next = b;
+                    cur = cur->next;
+                }
+                b = b->next;
+            }
+        }
+        
+        if(b) a = b;
+        
+        if(!head) cur = head = a;
+        else cur->next = a;
+        
+        return head;
+    }	
+	
+    // I've used traditional merge sort
+    // Time: O(n log n)
+    // Extra Space O(log n)
+    // merge requires no extra memory because it is a linked list
+    ListNode* sortList(ListNode* head) {
+        // base case --- vip
+        if(!head || !head->next) return head;
+        
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* before_slow = nullptr;
+        
+        while(fast && fast->next) {
+            before_slow = slow;
+            
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        
+        // split
+        if(before_slow) before_slow->next = nullptr;
+        
+        head = merge(sortList(head), sortList(slow));
+        
+        return head;
+    }
     
     
 }; 
