@@ -491,6 +491,51 @@ class Solution {
         
         return head;
     }
+	
+	
+    // Time : O(n) 
+    ListNode* insertIntoSortedList(ListNode* head, ListNode* node) {
+        if(!node) return head;
+        if(!head) return head = node;
+        
+        ListNode* cur = head;
+        ListNode* prev = nullptr;
+        while(cur && cur->val < node->val) prev = cur, cur = cur->next;
+        
+        if(!prev) {
+            node->next = cur;
+            return node;
+        } 
+        
+        node->next = cur;
+        prev->next = node;
+        return head;
+    }
+
+    // Approximately O(n * n), I'll upgrate it InshaAllah...
+    // we can use Binary Search to insert into sorted part
+    // with the help of a HashMap by using extra space
+    // TODO: find out better implementations
+    ListNode* insertionSortList(ListNode* head) {
+        if(!head || !head->next) return head;
+        
+        ListNode* prev = head;
+        ListNode* cur = head->next;
+
+        while(cur) {
+            prev->next = nullptr; // split sorted part
+            ListNode* temp_next = cur->next; // save next node
+            cur->next = nullptr; // take current node
+            head = insertIntoSortedList(head, cur);
+            prev = head;
+            // this part take O(n) time
+            while(prev && prev->next) prev = prev->next; // find last sorted node
+            prev->next = temp_next; // add up list
+            cur = temp_next;    // move to next node
+        }
+        
+        return head;
+    }
     
     
 }; 
