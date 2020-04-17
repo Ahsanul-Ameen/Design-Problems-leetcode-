@@ -5,7 +5,7 @@
 11.	https://leetcode.com/problems/paint-house-ii/
 12.	https://leetcode.com/problems/number-of-squareful-arrays/
   .	https://leetcode.com/problems/number-of-squareful-arrays/
-   tutor ial [https://swiyu.wordpress.com/]
+   tutorial [https://swiyu.wordpress.com/]
 13.	https://leetcode.com/articles/longest-valid-parentheses/
 14.	https://leetcode.com/problems/super-pow/
 15.	https://leetcode.com/problems/prefix-and-suffix-search/
