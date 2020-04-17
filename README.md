@@ -5,4 +5,4 @@
 4. Design Compressed String Iterator, efficient, not tested as locked </br>
        443. String Compression(reverse task) https://leetcode.com/submissions/detail/299586058/ </br>
        
-Well, Do not fear recursion( better call it backtracking ). Because of this cheat_sheet: https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
+Well, Do not fear recursion( better call it backtracking ). Because of this [cheat_sheet] (https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
